@@ -1,0 +1,139 @@
+/* GENERAL */
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+/* MAIN CONTAINER */
+main {
+  display: flex;
+  height: 500px;
+  width: 600px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+main > .image > img {
+  height: 500px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+main > .desc {
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main > .desc > .responsive > .title3 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: hsl(228, 12%, 48%);
+}
+
+main > .desc > .responsive > .title1 {
+  color: hsl(212, 21%, 14%);
+}
+
+main > .desc > .responsive > p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: left;
+  font-size: 14px;
+  margin-right: 70px;
+  line-height: 20px;
+  color: hsl(228, 12%, 48%);
+}
+
+main > .desc > .responsive > .prices {
+  display: flex;
+  align-items: center;
+}
+
+main > .desc > .responsive > .prices > .discount {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px;
+}
+
+main > .desc > .responsive > .prices > .initial {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+main > .desc > .responsive > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+main > .desc > .responsive > button > svg {
+  margin-right: 10px;
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 100%;
+  }
+  .desc {
+    background-color: white;
+    margin-left: 0 !important;
+    margin-top: -20px !important;
+    height: 400px !important;
+  }
+
+  .responsive {
+    margin-left: 20px;
+  }
+
+  img {
+    width: 100% !important;
+    height: 400px !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+  }
+
+  button {
+    margin-top: -20px !important;
+    width: 90% !important;
+  }
+}
